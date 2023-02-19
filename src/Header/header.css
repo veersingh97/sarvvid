@@ -82,7 +82,7 @@ svg {
     z-index: 999;
     padding: 0;
     color: rgb(255, 255, 255);
-    background-image: url("D:\sarvvid-ai\sarvvid\src\Images\background.svg");
+    background-image: url("../Images/background.svg");
   }
   .bars-mobile {
     width: 3rem;
