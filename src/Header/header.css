@@ -1,0 +1,91 @@
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  font-weight: 600;
+  background-image: url("D:\sarvvid-ai\sarvvid\src\Images\background.svg");
+  background-position: center;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.navbar-text {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.navbar-label {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-label:hover {
+  color: #09b4f8;
+}
+
+svg {
+  width: 3rem;
+  height: 3rem;
+  color: white;
+}
+.bars {
+  display: none;
+}
+@media (max-width: 38em) {
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    font-size: 47%;
+  }
+  .header-section {
+    padding: 2rem 2rem;
+    background-color: rgb(232, 232, 232);
+  }
+  .bars {
+    display: inline-block;
+  }
+  .navbar-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 6%;
+    gap: 4rem;
+    left: 0;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateX(100%);
+    overflow: hidden;
+    color: black;
+    transition: all 0.3s linear;
+  }
+  .navbar-text li a {
+    font-size: 2.4rem;
+  }
+  .navbar-text.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0%);
+    transform-origin: right;
+    transition: all 0.3s linear;
+    z-index: 999;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    background-image: url("D:\sarvvid-ai\sarvvid\src\Images\background.svg");
+  }
+  .bars-mobile {
+    width: 3rem;
+    height: 3rem;
+  }
+}

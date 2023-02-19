@@ -1,0 +1,72 @@
+.mission-section {
+    padding: 5rem;
+    /* background-image: linear-gradient(300deg,#4054B2 0%,#131935 100%); */
+  }
+  
+  .mission-content h3 {
+    font-size: 4rem;
+    color:#216D8D;
+  }
+  .mission-text{
+    font-size: 3rem;
+    color: white;
+}
+svg{
+      margin-right: 1.5rem;
+
+  }
+  .mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  .mission-grid h3 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  .mission-summary {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  .img {
+    width: 100%;
+  }
+  
+  @media (max-width: 75em) {
+    .mission-grid {
+      gap: 3rem;
+      align-items: center;
+    }
+    .mission-section {
+      padding: 4rem;
+    }
+  }
+  
+  @media (max-width: 61em) {
+    .mission-section {
+      padding: 4rem;
+    }
+    .mission-content h3 {
+      font-size: 2.6rem;
+    }
+    .mission-grid {
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+    .mission-summary {
+      font-size: 1.6rem;
+    }
+  }
+  @media(max-width:35em){
+    .mission-section {
+      padding: 4rem;
+    }
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap:3rem;
+    }
+  }

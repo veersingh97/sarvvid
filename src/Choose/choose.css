@@ -1,0 +1,36 @@
+.choose-section{
+    padding: 4rem;
+}
+.choose-section h2{
+    font-size: 4rem;
+    color: white;
+}
+.choose-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:3rem;
+    margin-top: 5rem;
+}
+.grid-content{
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow:5px 1px 5px 2px #8596ec;
+    transition: all .3s ease-in;
+}
+.grid-content:hover{
+    transform: scale(1.1);
+}
+.grid-content h3{
+    font-size: 3rem;
+    color:#7488e8;
+    margin: 1rem 0rem;
+}
+.grid-content p{
+    font-size: 1.8rem;
+    color: white;
+}
+@media(max-width:35em){
+    .choose-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
