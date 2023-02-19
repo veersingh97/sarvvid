@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './Header/header';
 import Footer from './Footer/footer';
 import Home from './Home/home';
-import AboutUs from './AboutUs/about';
 import ContactUs from './Contact/contact';
 import Pricing from './Pricing/pricing';
 import Services from './Services/services';
@@ -15,7 +14,6 @@ function App() {
     <Routes>
       <>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/pricing" element={<Pricing />} />
